@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#main{
+    margin-top: 100px;
+    padding: 70px;
+background: -webkit-linear-gradient(left, #B19CD9, teal);
+background: -o-linear-gradient(left, #B19CD9, teal);
+background: linear-gradient(to right, #B19CD9, teal);
+}
+
+.info{
+    height: 500px;
+/*    border: 3px dashed black;*/
+    background-color: lightblue;
+    margin-top: 50px;
+background: -webkit-linear-gradient(left, #B19CD9, lightblue);
+background: -o-linear-gradient(left, #B19CD9, lightblue);
+background: linear-gradient(to right, #B19CD9, lightblue);
+}
+
+.mainPic, .mainPicA{
+    float: left;
+    margin-right: 35px;
+    margin-top: 5px;
+    border: 3px groove darkblue;
+}
+
+.mainPicE{
+    position: relative;
+    left: 30px;
+    top: 10px;
+    border: 3px groove darkblue;
+
+}
+.studentCourses{
+    height: 498px;
+    width: 50%;
+    box-sizing: border-box;
+    float:left;
+}
+
+.adminLeftList{
+    height: 498px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.studentsDisplay{
+    border-left: 1px solid black;
+}
+
+.customHead{
+    font-weight: 800;
+    font-size: 2em;
+    color: darkblue;
+}
+
+.addThingsC, .addThingsS, .addThingsA{
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#userMsg, #loginMsg{
+    display:none;
+    background-color: lightcoral;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: darkred;
+}
+
+#courses_ul, #students_ul, #admin_ul{
+    margin-top: 30px;
+    list-style: none;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#students_ul{
+    height: 400px;
+    overflow: auto;
+    margin-left: 10px;
+}
+
+
+.adminList{
+margin-top: 15px;
+list-style-type: none;
+margin-left:0px;
+padding-left:0px;
+display: inline-block;
+width: 280px;
+}
+
+.adminList img{
+float:left;
+margin-right: 0px;
+    border: 1px solid black;
+cursor: pointer;
+
+}
+
+.adminList p{
+/*    text-align: left;*/
+    width: 230px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+/*
+    padding: 0;
+    margin-right: 10px;
+*/
+}
+
+.courseList img, .studList img{
+float:left;
+margin-right: 0px;
+    border: 1px solid black;
+cursor: pointer;
+
+}
+
+.courseList p, .studList p{
+/*    text-align: left;*/
+    width: 150px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+/*
+    padding: 0;
+    margin-right: 10px;
+*/
+}
+
+#students_ul{
+    height: 400px;
+    overflow: auto;
+    margin-left: 10px;
+}
+.courselist, .studlist{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.adminlist{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#admin_ul{
+    padding:0;
+}
+
+.leftIcon{
+    float:left;
+}
+
+.homeMain1, .homeMain2, .adminMain{
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.mainHead{
+    height: 50px;
+    width:100%;
+    border-bottom: 3px solid black;
+}
+
+#mhCButton, #mhCButtonA{
+    float: right;
+    margin-top: 10px;
+}
+
+.mhSpan, .mhSpanA{
+    font-size: 1.3em;
+    position: absolute;
+    top: 11px;
+}
+
+.showOnClickCorS, .showOnClickCorSPlus, .showOnClickA, .showOnClickAPlus{
+    display:none;
+}
+
+#cndHead, #adHead{
+    color:darkblue;
+    font-size: 2.5em;
+    font-weight: 300;
+          text-overflow: ellipsis;
+        max-width: 500px;
+    overflow: hidden;
+
+}
+
+/*
+#adMainDisp{
+      text-overflow: ellipsis;
+        width: 400px;
+  
+}
+*/
+
+#cndDescription, #adDescription{
+    height: 150px;
+    overflow: auto;    
+}
+
+#courseOrStudInnerList{
+    margin-top: 20px;
+    list-style: none;
+    height: 150px;
+    overflow: auto;
+    margin-left: 10px;
+/*    font-size: 1.5em;*/
+}
+
+
+#addCorSButton, #updateCorSButton, #addAButton, #updateAButton{
+    margin-top: 10px;
+}
+
+#deleteCButton, #deleteAButton{
+    margin-top: 10px;
+    float: right;
+}
+
+#errMsg, #errMsgA{
+    display: none;
+    width: 45%;
+    text-align: center;
+    height: 40px;
+    background-color: lightcoral;
+    position: relative;
+    bottom: 32px;
+    left: 100px;
+    color: darkred;
+    font-weight: 600;
+}
+
+.courseandStudDetails, .adminDetails{
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+#addCDescription{
+    max-height: 150px;
+    max-width: 350px;
+}
+
+#numcourseOrStudInnerList{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.links{
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.user, .user2{
+    margin-top: 25px;
+}
+
+.user2{
+    margin-right: 20px;
+
+}
+
+.userPic{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.userandrole{
+    margin-right: 5px;
+}
+
+#coursesDiv{
+    column-count: 3;
+    max-height: 120px;
+    overflow: auto;
+    position: relative;
+    top: 30px;
+}
+
+#courseOrStudInnerList{
+    column-count: 3;
+    max-height: 270px;
+    overflow: auto; 
+}
+
+
+body{
+    background-image: url(images/background.jpg);
+    background-size:cover;
+    background-position: center;
+
+}
+
+.logOut{
+    margin-top: 25px;
+    position: absolute;
+    right: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.navbar-default {
+  background-color:lightblue;
+  background-image: none;
+  background-repeat: no-repeat;
+ }
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+    .user, .user2{
+        
+    }
+}
+
+.loader {
+    display: none;
+  color: #03527c;
+  font-size: 90px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin: 72px auto;
+    margin-top: 180px;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+  animation: load6 1.7s infinite ease, round 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@keyframes load6 {
+  0% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em, -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, -0.749em -0.34em 0 -0.477em;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em, -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, -0.82em -0.09em 0 -0.477em;
+  }
+  100% {
+    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+  }
+}
+@-webkit-keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes round {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

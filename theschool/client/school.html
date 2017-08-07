@@ -1,0 +1,163 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Amir School</title>
+</head>
+<body>
+
+       <header>
+           
+           <nav class="navbar navbar-default">
+              <div class="container-fluid">
+    
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="http://localhost/theschool/client/school.html"><img src="css/images/logo.png" width = "150px"></a>
+                </div>
+
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class ="links"><a href="http://localhost/theschool/client/school.html">School <span class="sr-only">(current)</span></a></li>
+                    <li class ="links adminShow"><a href="http://localhost/theschool/client/administrators.html" target="_blank">Administrators</a></li>
+
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class = "userAndRole">hi</li>
+                    <li class = "userPic"><img id = "usImg" src = "" width="50px" height="50px"></li>
+                    <li><input type = "button" class="btn btn-primary logOut" value = "Logout"></li>
+
+                  </ul>
+                </div>
+          </div>
+        </nav>
+
+       </header>
+       
+      <main>
+           <div class = "container-fluid">
+              <div class = "row col-lg-5 col-md-6">
+                 <div class ="row col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 info">
+                  <div class = "studentCourses">
+                     <span class = "customHead">Courses</span>
+                     <button class = "glyphicon glyphicon-plus addThingsC"></button>
+                     <ul id = "courses_ul">
+                         
+                     </ul>
+                  </div>
+                  
+                  <div class = "studentCourses studentsDisplay">
+                     <span class = "customHead">Students</span>
+                     <button class = "glyphicon glyphicon-plus addThingsS"></button>
+                     <ul id = "students_ul">
+                         
+                     </ul>
+                  </div>
+                   
+               </div>
+              </div>
+
+               <div class ="row col-lg-7 col-md-6">
+                <div class ="row col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-8 col-sm-offset-2 col-xs-12 info">
+                  <div class = "homeMain1">
+                      
+                  </div>
+                  <div class = "homeMain2">
+                      
+                  </div>
+                  <div class = "loader">
+                      
+                  </div>
+                  <div class = "showOnClickCorS">
+                      <div class = "mainHead">
+                         <span class = 'mhSpan'></span>
+                         <input type = 'button' id ='mhCButton' class='btn btn-primary' value='Edit'>
+
+                      </div>
+                      <div id = "courseNameDisp">
+                         <img class = "mainPic" src = "../uploads/course.png" width = "100px" height = "100px">
+                          <div id="cndHead"></div>
+                          <p id ="cndDescription"></p>
+
+                      </div>
+                      <h2 class = "ulh2"></h2>
+                      <ul id = "courseOrStudInnerList">
+
+                      </ul>
+                  </div>
+                  
+                  <div class = "showOnClickCorSPlus">
+                      <div class = "mainHead">
+                         <span class = 'mhSpan'></span>
+
+                      </div>
+                      <div>
+                         <input type = 'button' id ='addCorSButton' class='btn btn-primary' value='Save'>
+                         <div>
+                             <input type = 'button' id ='updateCorSButton' class='btn btn-primary' value='Save'>
+                              <input type = 'button' id ='deleteCButton' class='btn btn-danger' value='Delete'>
+                         </div>
+                        <div id = "errMsg"></div>
+
+                            
+                      </div>
+                      <div class = "courseandStudDetails">
+                          <div id="nameDiv">
+                              <label for = "addName">Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                              <input type = "text" id= "addName">
+                          </div>
+                          <div id = "descDiv">
+                          <label for ="addCDescription">Description:</label>
+                          <textarea rows="4" cols="50" id="addCDescription"></textarea>
+                          </div>
+                          <div id = "phoneDiv">
+                             <label for = "addPhone">Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                          <input type = "text" id= "addPhone"> 
+                          </div>
+                          <div id = "emailDiv">
+                             <label for = "addEmail">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                          <input type = "text" id= "addEmail"> 
+                          </div>
+                          <div id = "imageDiv">
+                             <label for = "newImage">Image: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input id="newImage" type="file"/>
+                                <button id="upload">Upload</button>
+                                <img id = "addImage" class = "mainPicE" src = "css/images/uploadimage.png" width = "100px" height = "100px">                             
+                          </div>
+                          
+            
+
+                          <div id = "coursesDiv">
+                            <label for = "addCourses">Courses: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                          </div>
+                          
+
+                      </div>
+                      <div id = "numcourseOrStudInnerList"></div>
+
+                  </div>
+                   
+               </div>
+               </div>
+               
+           </div>
+       </main>
+        
+        
+        
+        
+</body>
+</html>

@@ -1,0 +1,189 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Administrators</title>
+</head>
+<body>
+       <header>
+           
+           <nav class="navbar navbar-default">
+              <div class="container-fluid">
+    
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="http://localhost/theschool/client/school.html"><img src="css/images/logo.png" width = "150px"></a>
+                </div>
+
+                
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class ="links"><a href="http://localhost/theschool/client/school.html" target="_blank">School <span class="sr-only">(current)</span></a></li>
+                    <li class ="links adminShow"><a href="http://localhost/theschool/client/administrators.html">Administrators</a></li>
+
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class = "userAndRole"></li>
+                    <li class = "userPic"><img id = "usImg" src = "" width="50px" height="50px"></li>
+
+                    <li><input type = "button" class="btn btn-primary logOut" value = "Logout"></li>
+
+                  </ul>
+                </div>
+          </div>
+        </nav>
+
+       </header>
+       
+              <main>
+           <div class = "container-fluid">
+              <div class = "row col-lg-4 col-md-6">
+                 <div class ="row col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 info">
+                  <div class = "adminLeftList">
+<!--                    adminLeftList-->
+                     <span class = "customHead">Administrators</span>
+                     <button class = "glyphicon glyphicon-plus addThingsA"></button>
+                     <ul id = "admin_ul">
+<!--                     courses_ul-->
+                     </ul>
+                     </div>
+                   
+               </div>
+              </div>
+
+               <div class ="row col-lg-8 col-md-6">
+                <div class ="row col-lg-11 col-lg-offset-1 col-md-12 col-sm-8 col-sm-offset-2 col-xs-12 info">
+                    <div class = "adminMain">
+<!--                     homeMain1-->
+                      
+                    </div>
+                    <div class = "loader">
+                      
+                    </div>
+                    <div class = "showOnClickA">
+<!--                       showOnClickCorS-->
+                      <div class = "mainHead">
+                         <span class = 'mhSpanA'></span>
+<!--                         mhSpan-->
+                         <input type = 'button' id ='mhCButtonA' class='btn btn-primary' value='Edit'>
+<!--                         mhcButton-->
+
+                      </div>
+                      <div id = "adMainDisp">
+                         <img class = "mainPicA" src = "../uploads/course.png" width = "100px" height = "100px">
+                          <div id="adHead"></div>
+                          <p id ="adDescription"></p>
+<!--
+                          cndHead
+                          cndDescription
+-->
+
+                      </div>
+<!--
+                      I DONT THINK I NEED THIS BUT I'M NOT SURE
+                      <h2 class = "ulh2"></h2>
+                      <ul id = "courseOrStudInnerList">
+                      </ul>
+-->
+                  </div>
+<!--
+                  ***********************************************************
+                  ***********************************************************
+-->
+                  
+                    <div class = "showOnClickAPlus">
+<!--                     showOnClickCorSPlus-->
+                      <div class = "mainHead">
+                         <span class = 'mhSpanA'></span>
+<!--                         mhSpan-->
+                      </div>
+                      <div>
+                         <input type = 'button' id ='addAButton' class='btn btn-primary' value='Save'>
+<!--                         addCorSButton-->
+                         <div>
+                             <input type = 'button' id ='updateAButton' class='btn btn-primary' value='Save'>
+<!--                             updateCorSButton-->
+                              <input type = 'button' id ='deleteAButton' class='btn btn-danger' value='Delete'>
+<!--                              deleteCButton-->
+                         </div>
+                        <div id = "errMsgA"></div>                            
+<!--                                errMsg-->
+                            
+                      </div>
+                      <div class = "adminDetails">
+<!--                         courseandStudDetails-->
+                          <div id="nameDivA">
+<!--                             nameDiv-->
+                              <label for = "addNameA">Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                              <input type = "text" id= "addNameA">
+<!--                              addName-->
+                          </div>
+                          <div id = "phoneDivA">
+<!--                            phoneDiv-->
+                             <label for = "addPhoneA">Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                          <input type = "text" id= "addPhoneA"> 
+<!--                          addPhone-->
+                          </div>
+                          <div id = "emailDivA">
+<!--                            emailDiv-->
+                             <label for = "addEmailA">Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                          <input type = "text" id= "addEmailA">
+<!--                              addEmail -->
+                          </div>
+                          <div id = "passwordDiv">
+<!--                            emailDiv-->
+                          <label for = "addPassword">Password: &nbsp;&nbsp;</label>
+                          <input type = "password" id= "addPassword">
+<!--                              addEmail -->
+                          </div>                          
+                        <div id = "roleDiv">
+                              <label for = "addRole">Role: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                              <select id = "addRole">
+<!--                                  <option value="Owner">Owner</option>-->
+                                  <option value="Manager">Manager</option>
+                                  <option value="Sales">Sales</option>
+                              </select>
+                          </div>
+                          <div id = "imageDivA">
+<!--                            imageDiv-->
+                             <label for = "newImageA">Image: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input id="newImageA" type="file"/>
+<!--                                newImage-->
+                                <button id="uploadA">Upload</button>
+<!--                                upload-->
+                                <img id = "addImageA" class = "mainPicE" src = "css/images/uploadimage.png" width = "100px" height = "100px">
+<!--                                addImage                             -->
+                          </div>
+
+                          
+
+                      </div>
+
+                  </div>
+<!--
+                  ***********************************************************
+                  ***********************************************************                  
+-->
+                   
+               </div>
+               </div>
+           </div>
+       </main>
+</body>
+</html>
+
+
+
+
