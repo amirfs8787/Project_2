@@ -1,3 +1,5 @@
+# Project_2
+
 This is the second project I had to do, which involves server side programming as well.  In addition to HTML5, CSS3, Bootstrap and Javascript, I also used:    
    a.) jQuery (SPA approach, objects, closures, modules, AJAX)  
    b.) PHP (API & Routing, OO, password encryption, file upload)  
